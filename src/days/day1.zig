@@ -25,8 +25,6 @@ pub fn challenge1() !void {
 
         idx += inc;
 
-        while (idx < 0)
-            idx += 100;
         idx = @mod(idx, 100);
         if (idx == 0)
             password += 1;
@@ -62,8 +60,6 @@ pub fn challenge2() !void {
         for (0..dist) |_| {
             idx += inc;
 
-            while (idx < 0)
-                idx += 100;
             idx = @mod(idx, 100);
             if (idx == 0)
                 change += 1;
